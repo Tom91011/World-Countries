@@ -1,0 +1,4606 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/04a1a7d6b4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+
+  <header>
+    <div id="inner-header">
+
+      <h1>Countries of the world</h1>
+      <div id="mode-container">
+        <i class="fas fa-globe"></i>
+        <!-- <h2 id="dark-mode">Dark Mode</h2> -->
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div id="filter-container">
+      <div id="inputs">
+        <div role="search" id="search-container">
+          <i class="fas fa-search"></i>
+          <input id="search-box" type="text" name="" placeholder="search for a country">
+        </div>
+      </div>
+
+      <div id="filter">
+        <div id="dropdown-menu">
+          <h3>Filter by Region</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="continents" class="hidden">
+          <h3 id="all countries" class="continent">All Countries</h3>
+          <h3 id="africa" class="continent">Africa</h3>
+          <h3 id="americas" class="continent">Americas</h3>
+          <h3 id="asia" class="continent">Asia</h3>
+          <h3 id="europe" class="continent">Europe</h3>
+          <h3 id="oceania" class="continent">Oceania</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="extra-info-container">
+      <div id="country-top-row">
+        <div id="country-flag" class "flag">
+        </div>
+        <div class="">
+          <div id="country-name">
+          </div>
+          <div id="country-population">
+          </div>
+          <div id="country-region">
+          </div>
+          <div id="country-capital">
+          </div>
+          <div id="country-area">
+          </div>
+          <div id="borders">
+          </div>
+          <div id="languages">
+          </div>
+        </div>
+      </div>
+      <div id="country-bottom-row">
+        <div id="weather-container">
+          <div id="weather-icon">
+          </div>
+          <p id="country-temp"></p>
+          <p id="weather-description"></p>
+        </div>
+        <div id="currency-container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkcSqOWD6VMcEVBsPu4O0Wkw24YNOZ10qFdA&usqp=CAU" alt="">
+          <p id="conversion-rate"></p>
+          <p id="inverse-rate"></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="countries-container">
+      <!-- populated from JavaScript -->
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="more-info">
+          <p>Click for more info</p>
+        </div>
+        <div class="flag flag-img">
+        </div>
+        <div class="country-info">
+          <div class="country-name">
+            <p class="country"></p>
+          </div>
+          <div class="population specific-details">
+          </div>
+          <div class="region specific-details">
+          </div>
+          <div class="capital specific-details">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+
+
+  <script src="index.js">
+
+  </script>
+</body>
+
+</html>

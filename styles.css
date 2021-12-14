@@ -1,0 +1,260 @@
+body{
+  margin: auto;
+  background-color: rgb(32,44,55);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  color: rgb(255,255,255,0.9);
+}
+
+header {
+  background-color: rgb(43,57,69);
+}
+
+#inner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:auto;
+  padding: 8px 50px;
+  max-width: 1200px;
+}
+
+#mode-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7em;
+}
+
+#dark-mode {
+  padding-left: 15px;
+}
+
+.fa-globe {
+  margin-right: 15px;
+  font-size: 3.5em;
+}
+
+main {
+  position: relative;
+  margin: auto;
+  padding: 0 50px;
+  max-width: 1200px;
+}
+
+h1 {
+  margin: 0 15px;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+}
+
+input{
+  padding: 10px 15px;
+  margin-left: 8px;
+  border: none;
+  background-color: rgb(43,57,69);
+  color: rgb(255,255,255);
+  width: 100%;
+}
+
+#inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-container,
+#dropdown-menu,
+#continents {
+  border-radius: 5px;
+  background-color: rgb(43,57,69);
+  font-size: 0.7em;
+}
+
+#search-container,
+#dropdown-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 40px;
+}
+
+#search-container {
+  width: 300px;
+}
+
+#search-container:hover,
+#search-box:hover {
+  background-color: rgb(99,180,184);
+}
+
+#filter-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin:50px 15px;
+  max-width: 1500px;
+  height: 40px; /*fixes float issues on the regional dropdown*/
+}
+
+#filter {
+  width: 180px;
+}
+
+#continents {
+position: absolute;
+z-index: 1;
+margin-top: 10px;
+}
+
+.continent {
+  margin: auto;
+  width: 150px;
+  padding: 5px 15px;
+}
+
+.continent:hover,
+#dropdown-menu:hover  {
+  background-color: rgb(99,180,184);
+  cursor: pointer;
+}
+
+/* for hiding the continents filter */
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+#countries-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.countries {
+transition: box-shadow 0.5s;
+position: relative;
+margin: 15px;
+width: 250px;
+background-color: rgb(43,57,69);
+font-weight: 800;
+}
+
+.countries:hover {
+  box-shadow: 0 0 18px 11px rgb(99,180,184);
+  -webkit-box-shadow: 0 0 18px 11px rgb(99,180,184);
+  -moz-box-shadow: 0 0 18px 11px rgb(99,180,184);
+  background-color: rgb(255,255,255,0.1);
+  cursor: pointer;
+}
+
+.country-info{
+padding: 15px 15px 25px 15px;
+}
+
+.country-name {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.specific-details p{
+  margin: 3px 0;
+  font-weight: 800;
+  font-size: 0.7em;
+}
+
+.more-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.more-info p {
+  position: relative;
+  top: 40%;
+}
+
+#extra-info-container {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  opacity: 0.95;
+  margin-top: -40vh;
+  margin-left: -40%;
+  height: 80vh;
+  width: 80%;
+  background-color: black;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+#country-top-row,
+#country-bottom-row {
+display: flex;
+justify-content: space-around;
+}
+
+#weather-container {
+  background-color: rgb(32,44,55);
+  border: dashed 1px hotpink;
+  /* height: 250px; */
+  width: 250px;
+}
+
+#weather-icon img {
+  width: auto;
+
+}
+
+#currency-container {
+  border: dashed 1px hotpink;
+  /* height: 250px; */
+  width: 250px;
+}
+
+@media only screen and (max-width: 939px) {
+  #countries-container {
+    justify-content: space-around;
+  }
+
+  #filter-container {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 659px) {
+  #filter-container {
+    display: block;
+    margin-bottom: 80px;
+  }
+
+  #countries-container {
+    margin-top: 15px;
+  }
+
+  #inputs {
+    margin-bottom: 15px;
+  }
+}

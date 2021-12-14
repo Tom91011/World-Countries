@@ -51,7 +51,7 @@ const countriesArray = document.querySelectorAll(".countries")
 let countriesData = [] // will contain the fetched data once complete
 
 // fetching country info from an API and populating in the newly created html
-fetch('https://restcountries.eu/rest/v2/all')
+fetch('https://restcountries.com/v2/all')
   .then(response => response.json())
   .then(countriesList => {
       countriesData = countriesList //saves the fetched JSON data in a variable
@@ -69,7 +69,7 @@ fetch('https://restcountries.eu/rest/v2/all')
               Capital: <span class="result">${countriesList[i].capital}</span>
             </p>`
       // flagImgAray[i].innerHTML = `<img src=${countriesList[i].flag} alt="">`
-      flagImgAray[i].innerHTML = `<img src="https://raw.githubusercontent.com/Tom91011/World-Countries/fba0953ca1d0e3ce9f2c9a057c8ddee85a334642/flags/4x3/${countriesList[i].alpha2Code}.svg">`.toLowerCase();
+      flagImgAray[i].innerHTML = `<img src="https://raw.githubusercontent.com/Tom91011/world-countries/6f097483ebf88f4caefe068ec346466dd26f0e8d/flags/4x3/${countriesList[i].alpha2Code}.svg">`.toLowerCase();
       }
     }
   )
